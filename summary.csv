@@ -1,0 +1,35 @@
+ID	WolF PSORT	TargetP	Pfam	UniProt Entry	% Ident	Blast annotation
+g10513.t1	nucl: 20, cyto_nucl: 14.5, cyto: 7, extr: 3, E.R.: 1, golg: 1	OTHER	NA	A0A1D1W9A8 	96.2	Uncharacterized protein
+g10514.t1	nucl: 19, cyto_nucl: 15, cyto: 9, extr: 3, mito: 1	OTHER	NA	A0A1D1VK14	83.6	Uncharacterized protein
+g11320.t1	plas: 24.5, extr_plas: 16, extr: 6.5, lyso: 1	OTHER	NA	A0A1D1VN86	89.9	Chitin-binding type-2 domain-containing protein
+g11513.t1	cyto: 17, cyto_nucl: 12.8333, cyto_mito: 9.83333, nucl: 7.5, E.R.: 3, mito: 1.5, plas: 1, pero: 1, golg: 1	SP	Transport protein Trs120 orTRAPPC9, TRAPP II complexsubunit	A0A1D1VT22	99.7	Trafficking protein particle complex subunit 11domain-containing protein
+g11806.t1	nucl: 18, cyto_nucl: 11.8333, mito: 5, extr: 4, cyto: 3.5, cyto_pero: 2.66667, cysk_plas: 1	OTHER	NA	A0A1D1VY22	88.8	Uncharacterized protein
+g11960.t1	nucl: 32	OTHER	Zinc finger, C3HC4 type(RING finger)	A0A1D1VY22	100	E3 ubiquitin protein ligase
+g12388.t1	extr: 25, plas: 4, mito: 2, lyso: 1	SP	Chitin binding Peritrophin-Adomain	A0A1D1VUB7	100	Chitin-binding type-2 domain-containing protein
+g12510.t1	plas: 29, cyto: 3	OTHER	NA	A0A1D1W068	99.5	MARVEL domain-containing protein
+g12562.t1	extr: 30, lyso: 2	SP	Chitin binding Peritrophin-Adomain	A0A1D1VTB1	100	Chitin-binding type-2 domain-containing protein
+g1285.t1	extr: 25, plas: 5, mito: 1, lyso: 1	SP	Chitin binding Peritrophin-Adomain	A0A1D1UGS8	100	Chitin-binding type-2 domain-containing protein
+g13530.t1	extr: 13, nucl: 6.5, lyso: 5, cyto_nucl: 4.5, plas: 3, E.R.: 3, cyto: 1.5	OTHER	NA	A0A1D1VXD7	90.2	SEA domain-containing protein
+g14472.t1	nucl: 28, plas: 2, cyto: 1, cysk: 1	OTHER	NA	P0DOW4 	100	Damage suppressor protein
+g15153.t1	extr: 32	SP	Chitin binding Peritrophin-Adomain	A0A1D1W4C3 	100	Chitin-binding type-2 domain-containingprotein
+g15484.t1	nucl: 17.5, cyto_nucl: 15.3333, cyto: 12, cyto_mito: 6.83333, plas: 1, golg: 1	OTHER	Vps51/Vps67	A0A1D1W5L8	100	Vacuolar protein sorting-associated protein 51homolog
+g16318.t1	nucl: 20.5, cyto_nucl: 13, extr: 5, cyto: 4.5, E.R.: 1, golg: 1	OTHER	NA	A0A1D1W9A8 	96.7	Uncharacterized protein
+g16368.t1	nucl: 20.5, cyto_nucl: 13, extr: 5, cyto: 4.5, E.R.: 1, golg: 1	OTHER	NA	A0A1D1WAC1	97	Uncharacterized protein
+g2203.t1	plas: 29, nucl: 2, golg: 1	OTHER	Glycosyl hydrolases family31	A0A1D1ULD6	100	Glycoside hydrolase family 31 N-terminaldomain-containing protein
+g3428.t1	mito: 18, cyto: 11, extr: 2, nucl: 1	OTHER	NA	A0A1D1UU67	100	EF-hand domain-containing protein
+g3679.t1	extr: 26, mito: 2, lyso: 2, plas: 1, E.R.: 1	SP	Astacin (Peptidase familyM12A)	A0A1D1UYF1	97.2	Metalloendopeptidase
+g4106.t1	E.R.: 14.5, E.R._golg: 9.5, extr: 7, golg: 3.5, lyso: 3, pero: 2, plas: 1, mito: 1	OTHER	NA	A0A1D1UZ24	100	Uncharacterized protein
+g4970.t1	plas: 32	OTHER	Trypsin	A0A1D1UX28; A0A1D1V0K3	99.2; 97.2	Chitin-binding type-2 domain-containing protein;Peptidase S1 domain-containing protein
+g5237.t1	plas: 24, mito: 8	OTHER	NA	A0A1D1V3L7	96	Uncharacterized protein
+g5443.t1	extr: 28, nucl: 3, cyto: 1	OTHER	NA	A0A1D1V5F2	94.3	Chitin-binding type-2 domain-containing protein
+g5467.t1	extr: 27, plas: 4, mito: 1	SP	Chitin binding Peritrophin-Adomain	A0A1D1V5F2	76	Chitin-binding type-2 domain-containing protein
+g5502.t1	extr: 31, lyso: 1	SP	Chitin binding Peritrophin-Adomain	A0A1D1UZ82	94.7	Chitin-binding type-2 domain-containing protein
+g5503.t1	extr: 29, plas: 1, mito: 1, lyso: 1	SP	Chitin binding Peritrophin-Adomain	A0A1D1V5F2	100	Chitin-binding type-2 domain-containing protein
+g5510.t1	plas: 23, mito: 7, E.R.: 1, golg: 1	OTHER	Membrane-associatingdomain	A0A1D1V5G3	100	MARVEL domain-containing protein
+g5616.t1	extr: 31, mito: 1	SP	Chitin binding Peritrophin-Adomain	A0A1D1V894	100	Chitin-binding type-2 domain-containing protein
+g5641.t1	extr: 31, lyso: 1	SP	NA	A0A1D1V5Z4	100	Chitin-binding type-2 domain-containing protein
+g5927.t1	nucl: 30.5, cyto_nucl: 16.5, cyto: 1.5	OTHER	NA	A0A1D1V3M8; A0A1D1V0X5	95.6; 89.8	Elongin A binding-protein 1 domain-containing protein; Glucosamine 6-phosphate N-acetyltransferase
+g702.t1	extr: 29, plas: 2, lyso: 1	SP	Chitin binding Peritrophin-Adomain	A0A1D1UE66	96.3	Chitin-binding type-2 domain-containing protein
+g7861.t1	nucl: 16, cyto_nucl: 14, cyto: 8, plas: 5, pero: 1, cysk: 1, golg: 1	OTHER	SNF2-related domain	A0A1D1VBM7	96.9	SWI/SNF-related matrix-associatedactin-dependent regulator of chromatinsubfamily A-like protein 1
+g8100.t1	nucl: 16.5, cyto_nucl: 12.5, cyto: 7.5, plas: 5, extr: 2, E.R.: 1	OTHER	Inositol monophosphatasefamily	A0A1D1VCS5; A0A1D1VAF9	99.4; 92.5	Uncharacterized protein; Inositol monophosphatase 3
+g8312.t1	nucl: 15.5, cyto_nucl: 15.5, cyto: 12.5, mito: 2, plas: 1, golg: 1	OTHER	Region in Clathrin and VPS	A0A1D1VFT9	100	RING-type domain-containing protein
