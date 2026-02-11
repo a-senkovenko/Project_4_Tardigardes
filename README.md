@@ -1,9 +1,21 @@
-# Tardigardes in space 
+# Tardigrades in space 
+
+Tardigrades are microscopic extremofile ecdysozoans capable to survive after desiccation, freezing,
+and severe osmotic stress by entering a ametabolic state called cryptobiosis. 
+Exact pathways providing tardigrade extremotolerance need to be found.
+
+Gene prediction is one of the principal approaches to assess the properties
+of undescribed genes. Generally deployed techniques include ab initio prediction and similarity-based search. 
+
+Therefore, in this project analysis of [*Ramazzottius varieornatus*](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=947166) genome was performed with following search of
+proteins associated with radiation damage negation.
+
+Before the analyzis download [genome](http://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/949/185/GCA_001949185.1_Rvar_4.0/GCA_001949185.1_Rvar_4.0_genomic.fna.gz), [annotation](https://drive.google.com/file/d/1hCEywBlqNzTrIpQsZTVuZk1S9qKzqQAq/view?usp=sharing) and prebuilt protein [fasta](https://drive.google.com/file/d/12ShwrgLkvJIYQV2p1UlXklmxSOOxyxj4/view?usp=sharing).
 
 
 ## Step 1. Structural annotation
 
-If we have built genome annotation in gff format we can use it to restore protein fasta file via numerous methods.
+If we have built genome annotation in gff format use it to restore protein fasta file via numerous methods.
 The script [getAnnoFast.pl](http://augustus.gobics.de/binaries/scripts/getAnnoFasta.pl) can be used for this task:
 
 ```bash
@@ -29,7 +41,7 @@ Then try to find a functional annotation for the remaining sequences.
 The list of DNA-associated peptides obtained via tandem mass spectrometry.
 Therefore, need to find relevant proteins from protein fasta.
 
-Make new environment and add [blast]() and [diamond]() there.
+Make new environment and add [blast](https://anaconda.org/channels/bioconda/packages/blast/overview) and [diamond](https://github.com/bbuchfink/diamond) there.
 
 ```bash
 conda install blast diamond
@@ -65,7 +77,7 @@ Output of **diamond** is more precise:
 21	g12510.t1	100	22	0	0	1	22	443	464	2.46e-09	47.8
 29	g4106.t1	100	18	0	0	1	18	222	239	5.55e-07	40.8
 ```
-Only two entries from original protein fasta are present in diamond output.
+Only two entries from original protein fasta are present in diamond output. However, for the next steps better use the list with 34 candidate sequences.
 
 ## Step 3. Localization prediction
 
@@ -73,7 +85,7 @@ To evaluate the obtained data it is recommended to predict the localization of t
 Focus on the candidates present within nucleus.
 Use file hits.fa from previous step for each search
 
-### WoLF PSORT
+### [WoLF PSORT](https://wolfpsort.hgc.jp/)
 
 This web-available tool predicts localization of proteins and possible organisms they belong.
 
@@ -128,7 +140,7 @@ grep -c "nucl" ./search_res/wolfpsort_out.txt
 ```
 Therefore, we have 17 candidates by this round of search.
 
-### TargetP
+### [TargetP](https://services.healthtech.dtu.dk/service.php?TargetP-2.0)
 
 TargetP tool predicts subcellular localization of eukaryotic proteins by their N-terminal presequences.
 
@@ -254,6 +266,15 @@ Only one result found:
 Overall results on 34 candidate sequences are placed within summary.csv table
 
 ## Discussion
+
+    In our search for the nuclear proteins taking part in DNA protection, we have analyzed 
+34 protein candidates. After the first round of search by physical localisation we have filtered 17 candidates present in nucleus.
+The next round of prediction by function helped to cut off another 2 candidates. Finally in BLAST we have identified the only protein g14472.t1 aligned with tardigrade protein (100% Ident, e-value = 0) and this protein is actually a damage suppressor.
+This protein was reported earlier as [Dsup1](https://www.nature.com/articles/ncomms12808). 
+
+The discussion about tardigrade survivability in extreme conditions has revealed many protective mechanisms. In one of the
+most recent studies specific amplifications of several genes, including MRE11 and XPC, and numerous missense variants exclusive of R.varieornatus in CHEK1, POLK, UNG and TERT were described ([D. Carrero et al.](https://www.nature.com/articles/s41598-019-51471-8)). These genes combined influence DNA reparation and increase overall radiotolerance. How tardigrades gained these protection mechanisms? Evidence of horizontal gene transfer (HGT) in a tardigrade genome (17.5% of genes have foreign origin) was found in a freshwater species Hypsibius dujardini [T. Boothby et al.](https://doi.org/10.1073/pnas.1510461112). However, discussion on this topic has a strong counterargument about cotaminating sequences in the samples. The size difference between estimated genome size (around 100 Mbp) and assembly (212,3 Mbp) was highlighted, and the size of foreign genes is believed to be around 1-2% [G. Koutsovoulos et al.](https://doi.org/10.1073/pnas.1600338113). The discussion still continues, however, evidence of HGT were found recently, DODA1 gene is involved in radiotolerancy of waterbears and this gene is present in genomes of fungi and bacteria. In the same article, ardigrade-specific radiation-induced disordered protein (TRID1) and two mitochondrial pathways were described as part of radioprotection system of H. dujardini [Lei Li et al.](https://doi.org/10.1126/science.adl0799). 
+
 
 
 
